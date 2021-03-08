@@ -7,7 +7,7 @@ import javax.management.RuntimeErrorException;
 import biblioteka.interfejs.BibliotekaInterface;
 
 public class Biblioteka implements BibliotekaInterface {
-	//privatna lista sa svim knjigama u biblioteci
+	
 	private LinkedList<Knjiga> knjige = new LinkedList<Knjiga>();
 	
 	//Nepotreban komentar 2
