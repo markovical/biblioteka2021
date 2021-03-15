@@ -6,7 +6,16 @@ import javax.management.RuntimeErrorException;
 
 import biblioteka.interfejs.BibliotekaInterface;
 
+/**
+ * Ova klasa implementira interfejs BibliotekaInterface preko liste
+ * @author aca99
+ *
+ */
 public class Biblioteka implements BibliotekaInterface {
+	
+	/**
+	 * Lista sa svim knjigama u biblioteci.
+	 */
 	
 	private LinkedList<Knjiga> knjige = new LinkedList<Knjiga>();
 	
