@@ -50,7 +50,7 @@ class AutorTest {
 
 	@Test
 	void testSetIme() {
-		
+		Autor a = new Autor();
 		a.setIme("Pera");
 		
 		assertEquals("Pera", a.getIme());
@@ -65,7 +65,7 @@ class AutorTest {
 	@Test
 	void testSetImeKratakString() {
 		
-		assertThrows(java.lang.NullPointerException.class, () -> a.setIme("P"));
+		assertThrows(java.lang.RuntimeException.class, () -> a.setIme("P"));
 	}
 	@Test
 	void testSetPrezime() {
@@ -80,7 +80,7 @@ class AutorTest {
 	@Test
 	void testSetPrezimeKratakString() {
 		
-		assertThrows(java.lang.NullPointerException.class, () -> a.setPrezime("T"));
+		assertThrows(java.lang.RuntimeException.class, () -> a.setPrezime("T"));
 	}
 
 	@Test
@@ -99,7 +99,7 @@ class AutorTest {
 		"Pera, Peric, Pera, Peric, true",
 		"Pera, Zikic, Pera, Peric, false",
 		"Mika, Peric, Pera, Peric, false",
-		"Pera, Peric, Mika, Mikic, true",
+		"Pera, Peric, Mika, Mikic, false",
 	})
 	void testEqualsObject(String ime1, String prezime1, String ime2, String prezime2, boolean eq) {
 		a.setIme(ime1);
