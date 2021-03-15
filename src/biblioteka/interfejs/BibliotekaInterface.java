@@ -5,7 +5,24 @@ import java.util.LinkedList;
 import biblioteka.Autor;
 import biblioteka.Knjiga;
 
+
+/**
+ * 
+ * Interfejs koji predstavlja biblioteku.
+ * 
+ * @author Aleksandar Markovic
+ *
+ */
 public interface BibliotekaInterface {
+	
+	/**
+	 * Dodaje novu knjigu u biblioteku.
+	 *
+	 * @param knjiga Knjiga koja se dodaje.
+	 * 
+	 * @throws java.lang.NullPointerException ako je uneta knjiga null
+	 * @throws java.lang.RuntimeException ako uneta knjiga vec postoji
+	 */
 
 	public void dodajKnjigu(Knjiga knjiga);
 	
